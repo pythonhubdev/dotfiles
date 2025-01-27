@@ -18,6 +18,9 @@ config.macos_window_background_blur = 10
 -- Use the defaults as a base
 config.hyperlink_rules = wezterm.default_hyperlink_rules()
 
+-- Spawn a fish shell in login mode
+-- config.default_prog = { "/opt/homebrew/bin/nu", "-l" }
+
 -- Keys
 config.keys = {
 	-- Make Option-Left equivalent to Alt-b which many line editors interpret as backward-word
