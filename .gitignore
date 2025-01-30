@@ -3,3 +3,5 @@ fish/
 github-copilot/
 raycast/
 flutter/
+zshrc/.zsh_sessions/
+.config/containers
