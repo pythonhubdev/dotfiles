@@ -5,3 +5,7 @@ raycast/
 flutter/
 zshrc/.zsh_sessions/
 .config/containers
+zshrc/.zcompdump
+zshrc/.zcompdump-*
+zshrc/.zsh_history
+.DS_Store

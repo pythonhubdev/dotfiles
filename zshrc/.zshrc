@@ -87,3 +87,20 @@ alias cd="z"
 
 # Amazon Q post block. Keep at the bottom of this file.
 [[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh"
+
+
+# Flutter aliases
+alias fpg="flutter pub get"
+alias fpa="flutter pub add"
+alias fpr="flutter pub remove"
+alias fpu="flutter pub upgrade"
+alias fpum="flutter pub upgrade --major-versions"
+alias fpo="flutter pub outdated"
+alias fpc="flutter pub clean"
+alias drb="dart run build_runner watch --delete-conflicting-outputs"
+
+export PATH="/Users/vetrichelvan/Library/Application Support/JetBrains/Toolbox/scripts:$PATH"
+export PATH=/Users/vetrichelvan/.tiup/bin:$PATH
+
+. "/Users/vetrichelvan/.deno/env"
+
