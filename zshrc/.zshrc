@@ -104,3 +104,4 @@ export PATH=/Users/vetrichelvan/.tiup/bin:$PATH
 
 . "/Users/vetrichelvan/.deno/env"
 
+export XDG_CONFIG_HOME="$HOME/.config"
