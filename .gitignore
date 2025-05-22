@@ -6,3 +6,8 @@ flutter/
 containers
 .DS_Store
 .idea/
+act/
+.android/
+tool_state
+lazygit/
+ngrok/
