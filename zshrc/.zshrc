@@ -101,7 +101,14 @@ alias drb="dart run build_runner watch --delete-conflicting-outputs"
 
 export PATH="/Users/vetrichelvan/Library/Application Support/JetBrains/Toolbox/scripts:$PATH"
 export PATH=/Users/vetrichelvan/.tiup/bin:$PATH
+export PATH=/Users/vetrichelvan/go/bin:$PATH
 
 . "/Users/vetrichelvan/.deno/env"
 
 export XDG_CONFIG_HOME="$HOME/.config"
+
+eval "$(task --completion zsh)"
+
+export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
