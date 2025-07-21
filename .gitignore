@@ -13,3 +13,5 @@ lazygit/
 ngrok/
 swiftpm
 gollama
+uv/
+configstore/

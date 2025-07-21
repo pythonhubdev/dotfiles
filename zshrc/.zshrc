@@ -1,5 +1,34 @@
 export LANG=en_US.UTF-8
 
+# Add deno completions to search path
+if [[ ":$FPATH:" != *":/Users/vetrichelvan/.zsh/completions:"* ]]; then export FPATH="/Users/vetrichelvan/.zsh/completions:$FPATH"; fi
+fpath+=~/.zfunc; autoload -Uz compinit; compinit
+
+zstyle ':completion:*' menu select
+
+export PATH=/Users/vetrichelvan/.tiup/bin:$PATH
+
+# bun completions
+[ -s "/Users/vetrichelvan/.bun/_bun" ] && source "/Users/vetrichelvan/.bun/_bun"
+. "/Users/vetrichelvan/.deno/env"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/vetrichelvan/.lmstudio/bin"
+# End of LM Studio CLI section
+
+
+# opencode
+export PATH=/Users/vetrichelvan/.opencode/bin:$PATH
+
+## [Completion]
+## Completion scripts setup. Remove the following line to uninstall
+[[ -f /Users/vetrichelvan/.config/.dart-cli-completion/zsh-config.zsh ]] && . /Users/vetrichelvan/.config/.dart-cli-completion/zsh-config.zsh || true
+## [/Completion]
+
+
+# Task Master aliases added on 6/30/2025
+alias tm='task-master'
+alias taskmaster='task-master'
 # Amazon Q pre block. Keep at the top of this file.
 [[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh"
 export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
@@ -112,3 +141,5 @@ eval "$(task --completion zsh)"
 export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
 export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
+export OPENAI_API_KEY="ollama"
+export OLLAMA_BASE_URL="http://localhost:11434/v1"
