@@ -127,6 +127,7 @@ alias fpum="flutter pub upgrade --major-versions"
 alias fpo="flutter pub outdated"
 alias fpc="flutter pub clean"
 alias drb="dart run build_runner watch --delete-conflicting-outputs"
+alias python="python3"
 
 export PATH="/Users/vetrichelvan/Library/Application Support/JetBrains/Toolbox/scripts:$PATH"
 export PATH=/Users/vetrichelvan/.tiup/bin:$PATH
