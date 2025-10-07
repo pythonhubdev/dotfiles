@@ -15,3 +15,8 @@ swiftpm
 gollama
 uv/
 configstore/
+cursor/
+gcloud/
+.wrangler/
+zed/
+.copilot/

@@ -83,9 +83,6 @@ fpath+=~/.zfunc; autoload -Uz compinit; compinit
 
 zstyle ':completion:*' menu select
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/vetrichelvan/Documents/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/vetrichelvan/Documents/google-cloud-sdk/path.zsh.inc'; fi
-
 # Yazi setup
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
@@ -144,3 +141,9 @@ export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
 export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 export OPENAI_API_KEY="ollama"
 export OLLAMA_BASE_URL="http://localhost:11434/v1"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/vetrichelvan/Documents/SDK/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/vetrichelvan/Documents/SDK/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/vetrichelvan/Documents/SDK/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/vetrichelvan/Documents/SDK/google-cloud-sdk/completion.zsh.inc'; fi

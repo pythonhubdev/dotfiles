@@ -2,3 +2,7 @@
 
 [ui]
 defatul-command = "log"
+
+[user]
+name = "Vetrichelvan"
+email = "pythonhubdev@gmail.com"
