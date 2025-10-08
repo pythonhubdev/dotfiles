@@ -1,0 +1,22 @@
+fork = false
+frame = "full"
+idle = true
+maximized = false
+mouse-cursor-icon = "arrow"
+neovim-bin = "/opt/homebrew/bin/nvim"
+no-multigrid = false
+srgb = true
+tabs = true
+title-hidden = false
+vsync = true
+wsl = false
+
+[font]
+normal = []
+size = 14.0
+
+[box-drawing]
+mode = "font-glyph"
+
+[box-drawing.sizes]
+default = [2, 4]
